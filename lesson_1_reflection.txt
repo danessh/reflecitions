@@ -1,0 +1,83 @@
+git commands
+
+detached HEAD (current commit) state: removing a commit from the timelines of changes
+
+-git diff: compare two commits (ORIG,NEW)
+-git clone: copy entire Git respository
+-git checkout: temporarily reset all respository files to a specific commit
+-git log: shows the commits to a respository starting with most recent
+-git init: creates a .git repository
+-git status: shows files that have changed since last change
+commit is a snapshot of a git respository
+
+ls -a : shows hidden folders
+--stat : gives statistics about which files have changed
+q : to stop seeing stat
+move: move or rename files
+
+git clone [url]
+git diff [commit ID, commit ID]
+git checkout [commit ID]
+
+flags
+git log --stat
+
+
+
+How did viewing a diff between two versions of a file help you see the bug that 
+was introduced?
+
+    
+
+Fill in your answer here
+
+
+
+How could having easy access to the entire history of a file make you a more 
+efficient programmer in the long term?
+
+    
+
+Easy access to old reusable versions/code.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+ 
+
+Pros: Man - Meaningful. Auto - Saves when might forget.
+Cons: Man - May not save all the time. Make make minor saves. Auto - Too many saves
+   
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    
+
+Fill in your answer here
+
+How can you use the commands git log and git diff to view the history of files?
+
+    
+
+
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    
+
+More willing to make changes and explore.
+
+Fill in your answer here
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    
+
+Fill in your answer here
+
+
