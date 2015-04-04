@@ -8,21 +8,35 @@ detached HEAD (current commit) state: removing a commit from the timelines of ch
 -git log: shows the commits to a respository starting with most recent
 -git init: creates a .git repository
 -git status: shows files that have changed since last change
-commit is a snapshot of a git respository
+-git add: add files to the staging area
+-git commit: opens editor
 
-ls -a : shows hidden folders
+commit is a snapshot of a git respository
+commits should be a logical step
+staging area can bundle different commit stages
+staging area holds a copy of the last commit
+
+--staged: shows diff between staging area and repository
+-a : shows hidden folders
 --stat : gives statistics about which files have changed
 q : to stop seeing stat
-move: move or rename files
+
 
 git clone [url]
 git diff [commit ID, commit ID]
 git checkout [commit ID]
+git add [filename]
+git commit
+git status
+git log
+git diff (no args): shows diffs between working directory and staging area
+git reset --hard: discars changes in working directory and staging area
+
 
 flags
 git log --stat
-
-
+ls -a
+git diff --staged
 
 How did viewing a diff between two versions of a file help you see the bug that 
 was introduced?
