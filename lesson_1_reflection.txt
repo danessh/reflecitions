@@ -11,7 +11,10 @@ detached HEAD (current commit) state: removing a commit from the timelines of ch
 -git add: add files to the staging area
 -git commit: opens editor
 -git show: show changes between commit and parent
-git merge (branch to merge into, branch)
+-git merge (branch to merge into, branch)
+-git remote: view current remotes
+-git remote add (remote name, remote url): adds remote repository from github
+-git push (remote to send, local branch to push)
 
 commit is a snapshot of a git respository
 commits should be a logical step
@@ -27,24 +30,27 @@ q : to stop seeing stat
 -b: creates a branchname
 -d: delete
 --abort: stop an action
+-v: more information
 
-git clone [url]
-git diff [commit ID, commit ID]
+git clone [remote url]
+git diff [commit ID/branchname, commit ID/branchname]
 git checkout [commit ID/branchname]
 git add [filename]
 git commit
 git status
 git log
 git diff (no args): shows diffs between working directory and staging area
-git reset --hard: discars changes in working directory and staging area
+git reset --hard: discards changes in working directory and staging area
 git branch (no args): shows existing branches
-git branch [branchname]
-git log --graph [branchname] [branchname]
+git branch [branchname]: creates a branch
+git log --graph [branchname] [branchname]: visualize two branches
 git checkout -b [branchname] : creates a branch and checks it out
 git show [commit ID]
 git merge [branchname, branchname]
 git branch -d [branchname]: delete branch label
 git log -n1 : shows one commit from the log
+git remote -v : will show fetch and push url
+
 
 flags
 git log --stat
@@ -52,62 +58,4 @@ ls -a
 git diff --staged
 git log --graph --oneline
 git merge -- abort
--n[0-9] 
-
-How did viewing a diff between two versions of a file help you see the bug that 
-was introduced?
-
-    
-
-Fill in your answer here
-
-
-
-How could having easy access to the entire history of a file make you a more 
-efficient programmer in the long term?
-
-    
-
-Easy access to old reusable versions/code.
-
-What do you think are the pros and cons of manually choosing when to create a
-commit, like you do in Git, vs having versions automatically saved, like Google
-docs does?
-
- 
-
-Pros: Man - Meaningful. Auto - Saves when might forget.
-Cons: Man - May not save all the time. Make make minor saves. Auto - Too many saves
-   
-
-
-
-Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
-
-    
-
-Fill in your answer here
-
-How can you use the commands git log and git diff to view the history of files?
-
-    
-
-
-
-How might using version control make you more confident to make changes that
-could break something?
-
-    
-
-More willing to make changes and explore.
-
-Fill in your answer here
-
-Now that you have your workspace set up, what do you want to try using Git for?
-
-    
-
-Fill in your answer here
-
-
+-n[0-9]
