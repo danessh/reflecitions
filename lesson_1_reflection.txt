@@ -10,6 +10,8 @@ detached HEAD (current commit) state: removing a commit from the timelines of ch
 -git status: shows files that have changed since last change
 -git add: add files to the staging area
 -git commit: opens editor
+-git show: show changes between commit and parent
+git merge (branch to merge into, branch)
 
 commit is a snapshot of a git respository
 commits should be a logical step
@@ -20,23 +22,37 @@ staging area holds a copy of the last commit
 -a : shows hidden folders
 --stat : gives statistics about which files have changed
 q : to stop seeing stat
-
+--graph: visualize branches
+--oneline: easier to read
+-b: creates a branchname
+-d: delete
+--abort: stop an action
 
 git clone [url]
 git diff [commit ID, commit ID]
-git checkout [commit ID]
+git checkout [commit ID/branchname]
 git add [filename]
 git commit
 git status
 git log
 git diff (no args): shows diffs between working directory and staging area
 git reset --hard: discars changes in working directory and staging area
-
+git branch (no args): shows existing branches
+git branch [branchname]
+git log --graph [branchname] [branchname]
+git checkout -b [branchname] : creates a branch and checks it out
+git show [commit ID]
+git merge [branchname, branchname]
+git branch -d [branchname]: delete branch label
+git log -n1 : shows one commit from the log
 
 flags
 git log --stat
 ls -a
 git diff --staged
+git log --graph --oneline
+git merge -- abort
+-n[0-9] 
 
 How did viewing a diff between two versions of a file help you see the bug that 
 was introduced?
